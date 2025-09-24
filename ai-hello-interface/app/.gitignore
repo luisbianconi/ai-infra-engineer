@@ -1,0 +1,46 @@
+# ===============================
+# Python + Docker + Test Project
+# ===============================
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Test caches
+.pytest_cache/
+tests/__pycache__/
+
+# Tools / IDE
+.vscode/
+.idea/
+
+# System junk
+*.log
+*.out
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Lockfiles (optional — depende do seu workflow)
+poetry.lock
+Pipfile.lock
+
+# Diretórios gerados pelo projeto
+flagged/
+
