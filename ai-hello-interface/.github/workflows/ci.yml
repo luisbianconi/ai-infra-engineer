@@ -9,6 +9,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ai-hello-interface
 
     steps:
     - name: Checkout code
@@ -28,7 +31,7 @@ jobs:
     - name: Install dev deps for testing
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements-dev.txt
+        pip install -r requirements.txt
 
     - name: run tests
       run: python -m pytest -q
