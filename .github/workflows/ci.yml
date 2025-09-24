@@ -52,7 +52,7 @@ jobs:
       - name: Build & (conditionally) push image
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./ai-hello-interface
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
